@@ -1,0 +1,53 @@
+A.  Apa itu jaringan komputer
+    Jaringan Komputer adalah sekumpulan komputer atau perangkat lain yang saling terhubung untuk berkomunikasi atau berbagi data.
+    contoh:
+        - Wi-Fi
+        - Internet kantor
+        -Jaringan Mobile
+
+B.  Komponen penting Jaringan
+    a. IP Address -> Alamat unik komputer di jaringan (cth. 192.168.1.10)
+    b. MAC Address -> Alamat fisik untuk setiap network (unik untuk setiap hardware)
+    c. Subnet Mask -> Menentukan bagian mana IP untuk jaringan dan host
+    d. Gateway -> Pintu keluar jaringan ke jaringan lain (biasanya router)
+    e. DNS -> "Buku Telepon" internet, mengubah domain jadi IP
+
+C.  Model OSI dan TCP/IP
+    -   OSI 7 Layer (Konsep)
+        1. Physical (Kabel, sinyal)
+        2. Data Link (MAC Address, switch)
+        3. Network (IP Address, routing)
+        4. Transport (TCP, UDP, port)
+        5. Session (koneksi antar aplikasi)
+        6. Presentation (format data, enkripsi)
+        7. Application (web browser, email)
+
+    -   TCP/IP (Model 4 layer, yang dipakai internet)
+        1. Network interface (Physical + Data link)
+        2. Internet (Network)
+        3. Transport (TCP/UDP)
+        4. Application (HTTP, FTP, dsb)
+
+D.  IP Address & Subnet
+    1. IP Address versi 4 adalah 32-bit, contoh: 192.168.1.1
+    2. Subnet Mask contoh: 255.255.255.0 -> artinya 24-bit untuk network, sisanya untuk host
+    3. IP Private (contoh: 192.168.x.x, 10.x.x.x) untuk jaringan local
+    4. IP Public adalah IP yang bisa diakses dari internet
+
+E.  Port dan Protocol
+    1. Port itu "pintu" dalam komputer buat akses layanan
+    2. contoh port umum:
+        - 80 -> HTTP
+        - 443 -> HTTPS
+        - 22 -> SSH
+        - 21 -> FTP
+    3. Protocol TCP vs UDP
+        - TCP : koneksi terjamin (kayak telefon)
+        - UDP : cepat tapi tidak pasti (kayak SMS)
+
+F. Tools dasar untuk cek jaringan
+    1. ping -> cek koneksi ke IP/domain
+    2. traceroute (Linux) / tracert (windows) -> Lihat jalur paket data
+    3. netstat -> info koneksi jaringan yang aktif di Physical
+    4. ipconfig (windows) / ifconfig (Linux) -> Info konfigurasi IP
+        
