@@ -1,0 +1,30 @@
+A.  Apa itu reconnaissance
+    reconnaissance adalah tahap pertama dalam hacking, dimana kamu:
+    - mengumpulkan info sebanyak mungkin
+    - tanpa menyentuh sistem secara langsung  (jika pasif)
+    - melakukan probing atau scanning (jika aktif)
+
+B.  Passive vs Aktive Recon
+    1.  Passive = Ngumpulan data tanpa interaksi langsung ke target
+        contoh: theHarvester, Google, WHOIS
+    2.  Active =  interaksi langsung bisa terdeteksi
+        contoh: nmap, ping, traceroute
+
+C.  Tool: Nmap(network mapper)
+    Nmap = Tool open-source buat scanning IP, port, OS, dan service
+    perintah dasar nmap:
+    - nmap IP -> scan sederhana
+    - nmap -sS IP  -> Stealth SYN scan (umum dipakai)
+    - nmap -p 1-1000 IP -> scan port tertentu
+    - nmap -O IP  -> Deteksi OS
+    - nmap -A IP -> scan lengkap (OS, service, traceroute, dsb)
+    - nmap -T4 -F IP -> scan cepat
+    - nmap -v IP -> verbose (detail lebih banyak)
+
+D.  Tool Tambahan
+    - theHarvester = mengumpulkan email, subdomain, nama host dari google, bing, dsb
+      contoh:
+
+      theHarvester -d contoh.com -b google  
+
+    - shodan.io = search engine untuk perangkat yang terkoneksi ke internet (camera, router, server)

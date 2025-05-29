@@ -1,0 +1,35 @@
+A.  Struktur Dasar Folder Linux
+    - / ->  Root directory(paling atas)
+    - /home/ -> Rumah user (cth: /home/master)
+    - /etc/ -> Konfigurasi sistem
+    - /bin/ -> Binary program penting
+    - /var/ -> Data berubah(log, mail, dsb)
+    - /root/ -> home untuk user root
+    - /usr/ -> aplikasi dan library tambahan
+  
+B.  Perintah Dasar Linux
+    - ls -> Lihat isi Folder
+    - cd -> Masuk ke Folder
+    - pwd -> tampilkan lokasi saat ini
+    - mkdir -> buat folder baru
+    - touch -> buat file kosong
+    - rm -> hapus file
+    - cp -> copy file
+    - mv -> pindah atau rename file
+    - cat -> tampilkan isi file
+    - chmod -> Ubah permision
+    - sudo -> jalankan perintah sebagai admin/root
+
+C.  User & permision
+    user biasa : akses terbatas
+    root : akses penuh (hati-hati bisa ngerusak sistem)
+    Permission di Linux:
+
+    -rwxr-xr--
+
+    artinya:
+    - r =  read
+    - w = write
+    - x = execute
+    
+  
